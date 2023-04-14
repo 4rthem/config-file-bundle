@@ -1,0 +1,4 @@
+services:
+    Arthem\ConfigFileBundle\DependencyInjection\JsonEnvVarProcessor:
+        tags:
+            - { name: container.env_var_processor }

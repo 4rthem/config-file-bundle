@@ -1,0 +1,40 @@
+{
+    "name": "arthem/config-file-bundle",
+    "description": "Inject files from env vars in your Symfony configuration",
+    "keywords": [
+        "env",
+        "file",
+        "docker"
+    ],
+    "type": "symfony-bundle",
+    "require": {
+        "php": "^8.1",
+        "symfony/dependency-injection": "^4 || ^5 || ^6",
+        "symfony/http-kernel": "^4 || ^5 || ^6",
+        "symfony/config": "^4 || ^5 || ^6"
+    },
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Arthem\\ConfigFileBundle\\": "src/"
+        }
+    },
+    "scripts": {
+        "cs": "vendor/bin/php-cs-fixer fix",
+        "rector": "vendor/bin/rector",
+        "stan": "vendor/bin/phpstan analyse --memory-limit 512M src tests --level 1"
+    },
+    "authors": [
+        {
+            "name": "Arthur de Moulins",
+            "email": "arthurdemoulins@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.16"
+    }
+}
