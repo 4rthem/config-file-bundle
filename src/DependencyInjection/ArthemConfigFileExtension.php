@@ -13,7 +13,7 @@ class ArthemConfigFileExtension extends Extension
 {
     final public const FILES_PARAM = 'arthem_config_file.config_files';
 
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);

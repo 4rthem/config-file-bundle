@@ -6,10 +6,10 @@ namespace Arthem\ConfigFileBundle;
 
 use Arthem\ConfigFileBundle\DependencyInjection\Configuration;
 
-class ConfigFileDumper
+final readonly class ConfigFileDumper
 {
     public function __construct(
-        private readonly string $cacheDir,
+        private string $cacheDir,
     ) {
     }
 

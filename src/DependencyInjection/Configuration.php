@@ -11,7 +11,7 @@ class Configuration implements ConfigurationInterface
 {
     final public const HASH_PLACEHOLDER = '%hash%';
 
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         $treeBuilder = new TreeBuilder('arthem_config_file');
 
